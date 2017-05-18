@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Jeffrey He!
+title: Jeffrey He
 style: style2
 image: jeffreyhe.jpg
 ---
 
-Hi.
+Hi. I'm really excited for HOH!
