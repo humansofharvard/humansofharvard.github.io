@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Christine Jou!
+title: Christine Jou
 style: style1
 image: christinejou.jpg
 ---
