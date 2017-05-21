@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jeffrey He
-style: style2
+style: style6
 image: jeffreyhe.jpg
 ---
 

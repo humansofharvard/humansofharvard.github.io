@@ -1,21 +1,71 @@
 ---
-layout: default
+layout: homepage
 ---
 
-<h1>{{site.name}}</h1>
-<p>{{site.description}}</p>
-<section class="tiles">
-	{% for post in site.posts %}
-	<article class="{{ post.style }}">
-		<span class="image">
-			<img src="{{ site.url }}/images/{{ post.image }}" alt="" />
-		</span>
-		<a href="{{ site.url }}{{ post.url }}">
-			<h2>{{ post.title }}</h2>
-			<div class="content">
-				<p>{{ post.excerpt }}</p>
-			</div>
-		</a>
-	</article>
-	{% endfor %}
-</section>
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="shortcut icon" type="image/x-icon" href="{{site.url}}/images/favicon.ico?">
+      <link rel="icon" sizes="16x16 32x32 64x64" href="{{site.url}}/images/favicon.ico">
+      <link rel="icon" type="image/png" sizes="196x196" href="{{site.url}}/images/favicon-192.png">
+      <link rel="icon" type="image/png" sizes="160x160" href="{{site.url}}/images/favicon-160.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="{{site.url}}/images/favicon-96.png">
+      <link rel="icon" type="image/png" sizes="64x64" href="{{site.url}}/images/favicon-64.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="{{site.url}}/images/favicon-32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="{{site.url}}/images/favicon-16.png">
+      <link rel="apple-touch-icon" href="{{site.url}}/images/favicon-57.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="{{site.url}}/images/favicon-114.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="{{site.url}}/images/favicon-72.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="{{site.url}}/images/favicon-144.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="{{site.url}}/images/favicon-60.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="{{site.url}}/images/favicon-120.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="{{site.url}}/images/favicon-76.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="{{site.url}}/images/favicon-152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}/images/favicon-180.png">
+      <meta name="msapplication-TileColor" content="#FFFFFF">
+      <meta name="msapplication-TileImage" content="/images/favicon-144.png">
+      <meta name="msapplication-config" content="/browserconfig.xml">
+
+      <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+      <link rel="stylesheet" href="{{site.url}}/assets/css/main.css" />
+      <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+      <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+  </head>
+
+  <body>
+
+		<div class="header-image">
+				<img style="position: relative" src="{{ site.url }}/images/test.png" width="100%" alt="test">
+				<h1 style="color: white; position: absolute; top: 300px; left: 0px; width: 100%;">Humans of Harvard</h1>
+		</div>
+
+
+
+		<!-- Wrapper -->
+      <div id="wrapper">
+
+
+      <!-- Main -->
+				<div id="main">
+					<div class="inner">
+						<p style="margin-bottom: 15px"></p>
+						<div style="text-align: center"><h1>Humans of Harvard</h1></div>
+						<section class="tiles">
+							{% for post in site.posts %}
+							<article class="{{ post.style }}">
+								<span class="image">
+									<img src="{{ site.url }}/images/{{ post.image }}" alt="" />
+								</span>
+								<a href="{{ site.url }}{{ post.url }}">
+									<h2>{{ post.title }}</h2>
+									<div class="content">
+										<p>{{ post.excerpt }}</p>
+									</div>
+								</a>
+							</article>
+							{% endfor %}
+						</section>
