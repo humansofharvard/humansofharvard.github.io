@@ -2,14 +2,11 @@
 layout: default
 ---
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src = "{{ site.url }}/scripts.js"></script>
-
 <h1>Submit</h1>
 
 <!-- Form -->
 <section>
-	<form method="post" action="#">
+	<form method="post" action="https://formspree.io/thehumansofharvard@gmail.com">
 		<div class="row uniform">
 			<div>
 				<p> What would you like to tell us more about? </p>
@@ -35,10 +32,10 @@ layout: default
 			</div>
 
 			<div class="6u 12u$(xsmall)">
-				<input type="email" name="your-email" id="your-email" value="" placeholder="Your Name" />
+				<input type="text" name="name" id="your-name" value="" placeholder="Your Name" />
 			</div>
 			<div class="6u$ 12u$(xsmall)">
-				<input type="email" name="your-email" id="your-email" value="" placeholder="Your Email" />
+				<input type="email" name="_replyto" id="your-email" value="" placeholder="Your Email" />
 			</div>
 
 			<div class="6u 12u$(small)">
@@ -53,7 +50,7 @@ layout: default
 				</ul>
 			</div>
 
-			<div id = "gratitude">
+			<div id = "gratitude" class "gratitude_options">
 			<div>
 				<p> <b> GRATITUTE LETTER OPTIONS </b> </p>
 				<p> If you want to submit a letter, let us know if you want it to be shared (on our FB page and website) or private (only sent to the person you are grateful for). </p>
