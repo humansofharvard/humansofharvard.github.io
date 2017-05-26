@@ -16,6 +16,7 @@ layout: default
 				<input type="radio" id="form-story" name="form-type" />
 				<label for="form-story">General Story</label>
 			</div>
+
 			<div class="4u$ 12u$(small)">
 				<input type="radio" id="form-letter" name="form-type"/>
 				<label for="form-letter"> Gratitude Letter </label>
@@ -23,6 +24,28 @@ layout: default
 
 			<div class="12u$">
 				<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+			</div>
+			
+			<div id = "gratitude">
+				<p> <b> GRATITUTE LETTER OPTIONS </b> </p>
+				<p> If you want to submit a letter, let us know if you want it to be shared (on our FB page and website) or private (only sent to the person you are grateful for). </p>
+
+				<input type="radio" id="form-shared" name="form-publicity" checked>
+				<label for="form-shared">Shared</label>
+				<input type="radio" id="form-private" name="form-publicity">
+				<label for="form-private">Private</label>
+
+				<input type="text" name="demo-name" id="demo-name" value="" placeholder="Who are you grateful for?" />
+				<br>
+
+				<input type="radio" id="year-2018" name="year">
+				<label for="year-2018">2018</label>
+				<input type="radio" id="year-2019" name="year">
+				<label for="year-2019">2019</label>
+				<input type="radio" id="year-2020" name="year">
+				<label for="year-2020">2020</label>
+				<input type="radio" id="year-2021" name="year">
+				<label for="year-2021">2021</label>
 			</div>
 
 			<div>
@@ -49,46 +72,7 @@ layout: default
 					<li><input type="reset" value="Reset" /></li>
 				</ul>
 			</div>
-
-			<div id = "gratitude" class "gratitude_options">
-			<div>
-				<p> <b> GRATITUTE LETTER OPTIONS </b> </p>
-				<p> If you want to submit a letter, let us know if you want it to be shared (on our FB page and website) or private (only sent to the person you are grateful for). </p>
-			</div>
-
-			<div class="4u 12u$(small)">
-				<input type="radio" id="form-shared" name="form-publicity" checked>
-				<label for="form-shared">Shared</label>
-			</div>
-			<div class="4u$ 12u$(small)">
-				<input type="radio" id="form-private" name="form-publicity">
-				<label for="form-private">Private</label>
-			</div>
-
-			<div class="6u 12u$(xsmall)">
-				<input type="text" name="demo-name" id="demo-name" value="" placeholder="Who are you grateful for?" />
-			</div>
-			<div class="6u$ 12u$(xsmall)">
-				<input type="email" name="demo-email" id="demo-email" value="" placeholder="House" />
-			</div>
-
-			<div class="3u 12u$(small)">
-				<input type="radio" id="year-2018" name="year">
-				<label for="year-2018">2018</label>
-			</div>
-			<div class="3u 12u$(small)">
-				<input type="radio" id="year-2019" name="year">
-				<label for="year-2019">2019</label>
-			</div>
-			<div class="3u 12u$(small)">
-				<input type="radio" id="year-2020" name="year">
-				<label for="year-2020">2020</label>
-			</div>
-			<div class="3u$ 12u$(small)">
-				<input type="radio" id="year-2021" name="year">
-				<label for="year-2021">2021</label>
-			</div>
-
 		</div>
+
 	</form>
 </section>
