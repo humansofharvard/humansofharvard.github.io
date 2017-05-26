@@ -82,7 +82,7 @@
 			</div>
 
 			<div class="4u 12u$(small)">
-				<input type="radio" id="form-story" name="form-type" />
+				<input type="radio" id="form-story" name="form-type" required/>
 				<label for="form-story">General Story</label>
 			</div>
 
@@ -92,47 +92,77 @@
 			</div>
 
 			<div class="12u$">
-				<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+				<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6" required></textarea>
 			</div>
-			
+
+			<div id = "story">
+				<p> If you want to submit a story, let us know if you would like your name to be attached to the story. </p>
+				<div class="6u 12u$(small)">
+					<input type="checkbox" id="demo-copy" name="demo-copy">
+					<label for="demo-copy">Anonymous</label>
+				</div>
+
+				<br>
+				<p> <b> OPTIONAL </b> </p>
+				<p> Please provide your name and email for contact information. We will only use this to verify your story once we publish it to our website and FB page. If you are writing an anonymous story, do not be pressured to fill the information below if you feel uncomfortable leaving personal contact information. </p>
+
+				<input type="text" name="name" id="your-name" value="" placeholder="Your Name" />
+				<input type="email" name="_replyto" id="your-email" value="" placeholder="Your Email" />
+
+				<br>
+
+				<input type="radio" id="year-2018" name="year-story">
+				<label for="year-2018">2018</label>
+				<input type="radio" id="year-2019" name="year-story">
+				<label for="year-2019">2019</label>
+				<input type="radio" id="year-2020" name="year-story">
+				<label for="year-2020">2020</label>
+				<input type="radio" id="year-2021" name="year-story">
+				<label for="year-2021">2021</label>
+
+				<br>
+
+				<p> Also let us know if you want a picture to go along with your story to be added on our FB page and website or to let the person are grateful for know that he or she is appreciated! </p>
+				<input type="checkbox" id="demo-copy" name="demo-copy-story">
+				<label for="demo-copy">Opt out of Photo</label>
+			</div>
+
 			<div id = "gratitude">
-				<p> <b> GRATITUTE LETTER OPTIONS </b> </p>
+				<p> <b> TELL US MORE </b> </p>
 				<p> If you want to submit a letter, let us know if you want it to be shared (on our FB page and website) or private (only sent to the person you are grateful for). </p>
 
-				<input type="radio" id="form-shared" name="form-publicity" checked>
+				<input type="radio" id="form-shared" name="form-publicity" checked required>
 				<label for="form-shared">Shared</label>
 				<input type="radio" id="form-private" name="form-publicity">
 				<label for="form-private">Private</label>
 
-				<input type="text" name="demo-name" id="demo-name" value="" placeholder="Who are you grateful for?" />
+				<input type="text" name="demo-name" id="demo-name" value="" placeholder="Who are you grateful for?" required />
 				<br>
 
-				<input type="radio" id="year-2018" name="year">
-				<label for="year-2018">2018</label>
-				<input type="radio" id="year-2019" name="year">
-				<label for="year-2019">2019</label>
-				<input type="radio" id="year-2020" name="year">
-				<label for="year-2020">2020</label>
-				<input type="radio" id="year-2021" name="year">
-				<label for="year-2021">2021</label>
-			</div>
+				<input type="radio" id="year-2018-grad" name="year-grad" required>
+				<label for="year-2018-grad">2018</label>
+				<input type="radio" id="year-2019-grad" name="year-grad">
+				<label for="year-2019-grad">2019</label>
+				<input type="radio" id="year-2020-grad" name="year-grad">
+				<label for="year-2020-grad">2020</label>
+				<input type="radio" id="year-2021-grad" name="year-grad">
+				<label for="year-2021-grad">2021</label>
 
-			<div>
-				<p> <b> ADDITIONAL OPTIONAL INFORMATION </b> </p>
-				<p> Please provide your name and email for contact information. We will only use this to verify the person we will be mailing your gratitude letter to. If you are writing an anonymous story and feel uncomfortable leaving personal contact information, do not be pressured to fill the information below. </p>
-				<p> Also let us know if you want a picture to go along with your story to be added on our FB page and website or to let the person are grateful for know that he or she is appreciated! </p>
-			</div>
+				<br>
 
-			<div class="6u 12u$(xsmall)">
+				<p> <b> CONTACT </b> </p>
+				<p> Please provide your name and email for contact information. We will only use this to verify the person we will be mailing your gratitude letter to. </p>
+
 				<input type="text" name="name" id="your-name" value="" placeholder="Your Name" />
-			</div>
-			<div class="6u$ 12u$(xsmall)">
 				<input type="email" name="_replyto" id="your-email" value="" placeholder="Your Email" />
-			</div>
 
-			<div class="6u 12u$(small)">
-				<input type="checkbox" id="demo-copy" name="demo-copy">
-				<label for="demo-copy">Opt out of Photo</label>
+				<br>
+
+				<p> Also let us know if you want a picture to go along with your story to be added on our FB page and website or to let the person are grateful for know that he or she is appreciated! </p>
+
+				<input type="checkbox" id="demo-copy-grad" name="demo-copy-gratitude">
+				<label for="demo-copy-grad">Opt out of Photo</label>
+
 			</div>
 
 			<div class="12u$">
