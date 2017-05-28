@@ -38,9 +38,31 @@ layout: homepage
 
   <body>
 
-		<div class="header-image">
-				<img style="position: relative" src="{{ site.url }}/images/test.png" width="100%" alt="test">
-				<h1 style="color: white; position: absolute; top: 300px; left: 0px; width: 100%;">Humans of Harvard</h1>
+		<div class="header-image" style="position: relative">
+        <div style="background: rgba(0,0,0,1); width: 100%">
+          <img style="width: 100%; vertical-align: top; opacity: 0.3" src="{{ site.url }}/images/home.jpg" alt="test">
+        </div>
+
+        <div class="hometext" style="color: white; position: absolute; top: 15%; left: 50%">
+
+          <div style="position: relative; left: -50%; white-space: nowrap">
+            <h1>Humans of Harvard</h1>
+          </div>
+        </div>
+
+        <div class="hometext" style="color: white; position: absolute; top: 25%; left: 50%">
+
+          <div style="position: relative; left: -50%">
+              <ul style="padding-left: 0; white-space: nowrap">
+                <li style="display: inline-block"><a style="display: block; float: left; text-align: center; padding: 14px 16px; color: #ffffff; border-bottom: none" href="{{ site.url }}">Home</a></li>
+                <li style="display: inline-block"><a style="display: block; float: left; text-align: center; padding: 14px 16px; color: #ffffff; border-bottom: none" href="{{ site.url }}/about">About</a></li>
+                <li style="display: inline-block"><a style="display: block; float: left; text-align: center; padding: 14px 16px; color: #ffffff; border-bottom: none" href="{{ site.url }}/stories">Stories</a></li>
+                <li style="display: inline-block"><a style="display: block; float: left; text-align: center; padding: 14px 16px; color: #ffffff; border-bottom: none" href="{{ site.url }}/submit">Submit</a></li>
+              </ul>
+          </div>
+        </div>
+
+
 		</div>
 
 
@@ -56,7 +78,7 @@ layout: homepage
 						<div style="text-align: center"><h1>Humans of Harvard</h1></div>
 						<section class="tiles">
 							{% for post in site.posts %}
-							<article class="{{ post.style }}">
+							<article class="style6">
 								<span class="image">
 									<img src="{{ site.url }}/images/{{ post.image }}" alt="" />
 								</span>
