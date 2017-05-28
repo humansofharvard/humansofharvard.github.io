@@ -40,16 +40,16 @@ layout: homepage
 
 		<div class="header-image" style="position: relative">
         <div style="background: rgba(0,0,0,1); width: 100%">
-          <img style="width: 100%; vertical-align: top; opacity: 0.3" src="{{ site.url }}/images/home.jpg" alt="test">
+          <img style="width: 100%; vertical-align: top; opacity: 0.2" src="{{ site.url }}/images/home.jpg" alt="test">
         </div>
 
         <div class="hometext" style="color: white; position: absolute; top: 15%; left: 0px; width: 100%; text-align: center">
             <h1>Humans of Harvard</h1>
         </div>
 
-        <div class="hometext" style="color: white; position: absolute; top: 25%; right: 50%; height: 100%">
+        <div class="hometext" style="color: white; position: absolute; top: 25%; height: 100%; width: 100%">
 
-          <div style="position: fixed; top: 0; right: -50%">
+          <div style="position: absolute; left: 50%; transform: translate(-50%, 0px);">
               <ul style="padding-left: 0; white-space: nowrap">
                 <li style="display: inline-block"><a style="display: block; float: left; text-align: center; padding: 14px 16px; color: #ffffff; border-bottom: none" href="{{ site.url }}">Home</a></li>
                 <li style="display: inline-block"><a style="display: block; float: left; text-align: center; padding: 14px 16px; color: #ffffff; border-bottom: none" href="{{ site.url }}/about">About</a></li>
@@ -71,8 +71,7 @@ layout: homepage
       <!-- Main -->
 				<div id="main">
 					<div class="inner">
-						<p style="margin-bottom: 15px"></p>
-						<div style="text-align: center"><h1>Humans of Harvard</h1></div>
+						<p style="margin-bottom: 30px"></p>
 						<section class="tiles">
 							{% for post in site.posts %}
 							<article class="style6">
@@ -88,3 +87,5 @@ layout: homepage
 							</article>
 							{% endfor %}
 						</section>
+          </div>
+        </div>
