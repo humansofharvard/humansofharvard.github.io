@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Christine Jou
-style: style6
+style: style2
 image: christinejou.jpg
 ---
 
