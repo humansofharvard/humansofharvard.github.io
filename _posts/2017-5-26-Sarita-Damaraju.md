@@ -3,7 +3,7 @@ layout: post
 title: Sarita Damaraju
 style: style4
 image: saritadamaraju.jpg
-description: "I am Sarita."
+description: I am Sarita.
 
 ---
 

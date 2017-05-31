@@ -5,25 +5,25 @@ layout: homepage
 <!DOCTYPE html>
 <html>
   <head>
-      <link rel="shortcut icon" type="image/x-icon" href="{{site.url}}/images/favicon.ico?">
-      <link rel="icon" sizes="16x16 32x32 64x64" href="{{site.url}}/images/favicon.ico">
-      <link rel="icon" type="image/png" sizes="196x196" href="{{site.url}}/images/favicon-192.png">
-      <link rel="icon" type="image/png" sizes="160x160" href="{{site.url}}/images/favicon-160.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="{{site.url}}/images/favicon-96.png">
-      <link rel="icon" type="image/png" sizes="64x64" href="{{site.url}}/images/favicon-64.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="{{site.url}}/images/favicon-32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="{{site.url}}/images/favicon-16.png">
-      <link rel="apple-touch-icon" href="{{site.url}}/images/favicon-57.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="{{site.url}}/images/favicon-114.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="{{site.url}}/images/favicon-72.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="{{site.url}}/images/favicon-144.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="{{site.url}}/images/favicon-60.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="{{site.url}}/images/favicon-120.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="{{site.url}}/images/favicon-76.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="{{site.url}}/images/favicon-152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}/images/favicon-180.png">
+      <link rel="shortcut icon" type="image/x-icon" href="{{site.url}}/assets/images/favicon.ico?">
+      <link rel="icon" sizes="16x16 32x32 64x64" href="{{site.url}}/assets/images/favicon.ico">
+      <link rel="icon" type="image/png" sizes="196x196" href="{{site.url}}/assets/images/favicon-192.png">
+      <link rel="icon" type="image/png" sizes="160x160" href="{{site.url}}/assets/images/favicon-160.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="{{site.url}}/assets/images/favicon-96.png">
+      <link rel="icon" type="image/png" sizes="64x64" href="{{site.url}}/assets/images/favicon-64.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="{{site.url}}/assets/images/favicon-32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="{{site.url}}/assets/images/favicon-16.png">
+      <link rel="apple-touch-icon" href="{{site.url}}/assets/images/favicon-57.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="{{site.url}}/assets/images/favicon-114.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="{{site.url}}/assets/images/favicon-72.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="{{site.url}}/assets/images/favicon-144.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="{{site.url}}/assets/images/favicon-60.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="{{site.url}}/assets/images/favicon-120.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="{{site.url}}/assets/images/favicon-76.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="{{site.url}}/assets/images/favicon-152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}/assets/images/favicon-180.png">
       <meta name="msapplication-TileColor" content="#FFFFFF">
-      <meta name="msapplication-TileImage" content="/images/favicon-144.png">
+      <meta name="msapplication-TileImage" content="/assets/images/favicon-144.png">
       <meta name="msapplication-config" content="/browserconfig.xml">
 
       <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
@@ -40,7 +40,7 @@ layout: homepage
 
 		<div class="header-image" style="position: relative">
         <div style="background: rgba(0,0,0,1); width: 100%">
-          <img style="width: 100%; vertical-align: top; opacity: 0.2" src="{{ site.url }}/images/home.jpg" alt="test">
+          <img style="width: 100%; vertical-align: top; opacity: 0.2" src="{{ site.url }}/assets/images/home.jpg" alt="test">
         </div>
 
         <div class="hometext" style="color: white; position: absolute; top: 15%; left: 0px; width: 100%; text-align: center">
@@ -76,7 +76,7 @@ layout: homepage
 							{% for post in site.posts %}
 							<article class="style6">
 								<span class="image">
-									<img src="{{ site.url }}/images/{{ post.image }}" alt="" />
+									<img src="{{ site.url }}/assets/images/people/{{ post.image }}" alt="" />
 								</span>
 								<a href="{{ site.url }}{{ post.url }}">
 									<h2>{{ post.title }}</h2>
