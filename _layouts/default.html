@@ -30,42 +30,96 @@
       <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
       <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" defer ></script>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" href="{{site.url}}/assets/css/main.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+      <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" defer ></script>-->
+
+      <style>
+      .navbar{
+         background-color: white;
+         border: none;
+      }
+
+      .homepic {
+        height:100vh;
+        min-height:400px;
+        background-size:cover;
+        background-image:url('https://instagram.fhou1-1.fna.fbcdn.net/t51.2885-15/e35/17125490_1938465533065706_7952152598746759168_n.jpg');
+      }
+
+      .affix {
+        -webkit-transition:padding 0.2s ease-out;
+        -moz-transition:padding 0.2s ease-out;
+        -o-transition:padding 0.2s ease-out;
+        transition:padding 0.2s ease-out;
+
+      }
+
+      @media (min-width:768px) {
+          .affix-top {
+            background:transparent;
+            border-color:transparent;
+            padding: 15px;
+            -webkit-transition:all 0.5s ease;
+            -moz-transition:all 0.5s ease;
+            -o-transition:all 0.5s ease;
+            transition:all 0.5s ease;
+          }
+      }
+
+      .affix-top .nav>li>a {
+         color: #000;
+      }
+
+      .affix-top.navbar .nav>li>a:hover,
+      .affix-top.navbar .navbar-brand
+      {
+         color: #333;
+      }
+
+      .nav ul {
+         list-style: none;
+      }
+
+      .nav ul li {
+         display: inline-block;
+      }
+      </style>
   </head>
 
   <body>
+    <div>
+      <div id="nav" class="navbar navbar-inverse navbar-fixed-top" data-spy="affix">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="{{site.url}}/" class="navbar-brand">Humans of Harvard</a>
+          <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="{{site.url}}/about">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What's New <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="{{site.url}}/stories">Stories</a></li>
+                  <li><a href="#">Anonymous</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Gratitude Letters</a></li>
+                </ul>
+              </li>
+              <li><a href="{{site.url}}/submit">Submit</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Wrapper -->
       <div id="wrapper">
-
-        <!-- Header -->
-					<header id="header">
-						<div class="inner">
-
-							<!-- Logo -->
-								<a href="{{ site.url }}" class="logo">
-									<span class="symbol"><img src="{{ site.url }}/assets/images/logo.png" alt="" /></span><span class="title">{{site.name}}</span>
-								</a>
-
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div>
-					</header>
-
-          <!-- Menu -->
-  					<nav id="menu">
-  						<h2>Menu</h2>
-  						<ul>
-  							<li><a href="{{ site.url }}">Home</a></li>
-                <li><a href="{{ site.url }}/about">About</a></li>
-                <li><a href="{{ site.url }}/stories">Stories</a></li>
-                <li><a href="{{ site.url }}/submit">Submit</a></li>
-  						</ul>
-  					</nav>
 
       <!-- Main -->
 				<div id="main">
