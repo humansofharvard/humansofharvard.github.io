@@ -1,11 +1,20 @@
 ---
 layout: default
 ---
+
+<style>
+
+</style>
 <article class="post">
-<h1>{{ page.title }}</h1>
-<span class="image main"><img style="width: 30%" src="{{ site.url }}/images/{{ page.image }}" alt="" /></span>
-  <div class="entry">
+
+<div> <p> <p> &nbsp;&nbsp;&nbsp; </p> </p></div>
+<span class="image main"><img style="float:right;width: 30%;margin-left: 50px;" src="{{ site.url }}/assets/images/people/{{ page.image }}" hspace="50" alt="" /></span>
+  <div class="entry" style ="text-align:justify">
     <p>{{ content }}</p>
+  </div>
+
+  <div>
+    {{page.title}}
   </div>
   <div class="date">
     {{ page.date | date: "%B %e, %Y" }}
