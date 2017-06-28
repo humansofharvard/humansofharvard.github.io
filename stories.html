@@ -5,16 +5,18 @@ layout: default
 <h1>Stories</h1>
 <section class="tiles">
 	{% for post in site.posts %}
-	<article class="{{ post.style }}">
-		<span class="image">
-			<img src="{{ site.url }}/assets/images/people/{{ post.image }}" alt="" />
-		</span>
-		<a href="{{ site.url }}{{ post.url }}">
-			<h2>{{ post.title }}</h2>
-			<div class="content">
-				<p>{{ post.description }}</p>
-			</div>
-		</a>
-	</article>
+		{% if post.type == "story" and post.tag == "public" %}
+			<article class="{{ post.style }}">
+				<span class="image">
+					<img src="{{ site.url }}/assets/images/people/{{ post.image }}" alt="" />
+				</span>
+				<a href="{{ site.url }}{{ post.url }}">
+					<h2>{{ post.title }}</h2>
+					<div class="content">
+						<p>{{ post.description }}</p>
+					</div>
+				</a>
+			</article>
+		{% endif %}
 	{% endfor %}
 </section>
