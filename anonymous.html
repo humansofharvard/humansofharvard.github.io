@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<br><br><br>
+<h1> all stories matter. </h1>
+<p> It's okay to tell others; we will listen. Even if you don't want to share who you are. </p>
+<article>
+	{% for story in site.posts %}
+    {% if story.tag == "private" %}
+    <hr/>
+      <h2>{{ story.title }}</h2>
+      <div>
+        <p>{{ story.content }}</p>
+      </div>
+    </a>
+    {% endif %}
+	{% endfor %}
+</article>
