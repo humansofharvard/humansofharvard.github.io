@@ -5,11 +5,11 @@ $(document).ready(function() {
     {
       $("#gratitude").hide();
       $("#story").hide();
-  		if ( $("#form-story").attr('checked'))
+  		if ( $("#form-story").is(':checked'))
       {
       	$("#story").show();
       }
-      if ( $("#form-letter").attr('checked'))
+      if ( $("#form-letter").is(':checked'))
       {
         $("#gratitude").show();
        }
