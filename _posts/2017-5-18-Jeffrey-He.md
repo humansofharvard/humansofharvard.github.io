@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Person 1
+title: Jeffrey
 style: style1
 image: jeffreyhe.jpg
-description: I am Person 1.
+description: My name is Jeffrey.
 tag: public
 type: story
 ---

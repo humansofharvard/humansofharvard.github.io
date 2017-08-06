@@ -1,140 +1,19 @@
 ---
-layout: homepage
+layout: default
 ---
 
-<!DOCTYPE html>
-<html>
-  <head>
-      <link rel="shortcut icon" type="image/x-icon" href="{{site.url}}/assets/images/favicon.ico?">
-      <link rel="icon" sizes="16x16 32x32 64x64" href="{{site.url}}/assets/images/favicon.ico">
-      <link rel="icon" type="image/png" sizes="196x196" href="{{site.url}}/assets/images/favicon-192.png">
-      <link rel="icon" type="image/png" sizes="160x160" href="{{site.url}}/assets/images/favicon-160.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="{{site.url}}/assets/images/favicon-96.png">
-      <link rel="icon" type="image/png" sizes="64x64" href="{{site.url}}/assets/images/favicon-64.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="{{site.url}}/assets/images/favicon-32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="{{site.url}}/assets/images/favicon-16.png">
-      <link rel="apple-touch-icon" href="{{site.url}}/assets/images/favicon-57.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="{{site.url}}/assets/images/favicon-114.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="{{site.url}}/assets/images/favicon-72.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="{{site.url}}/assets/images/favicon-144.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="{{site.url}}/assets/images/favicon-60.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="{{site.url}}/assets/images/favicon-120.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="{{site.url}}/assets/images/favicon-76.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="{{site.url}}/assets/images/favicon-152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}/assets/images/favicon-180.png">
-      <meta name="msapplication-TileColor" content="#FFFFFF">
-      <meta name="msapplication-TileImage" content="/assets/images/favicon-144.png">
-      <meta name="msapplication-config" content="/browserconfig.xml">
-
-      <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-
-      <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-      <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-
-      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-      <link rel="stylesheet" href="{{site.url}}/assets/css/main.css" />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-      <script>
-        $('#nav').affix({
-          offset: {
-            top: $('#services').offset().top
-          }
-        });
-      </script>
-
-      <style>
-      .navbar{
-         background-color: white;
-         border: none;
-      }
-
-      .homepic {
-        height:100vh;
-        min-height:400px;
-        background-size:cover;
-        background-image:url('https://instagram.fhou1-1.fna.fbcdn.net/t51.2885-15/e35/17125490_1938465533065706_7952152598746759168_n.jpg');
-      }
-
-      .affix {
-        -webkit-transition:padding 0.2s ease-out;
-        -moz-transition:padding 0.2s ease-out;
-        -o-transition:padding 0.2s ease-out;
-        transition:padding 0.2s ease-out;
-
-      }
-
-      @media (min-width:768px) {
-          .affix-top {
-            background:transparent;
-            border-color:transparent;
-            padding: 15px;
-            -webkit-transition:all 0.5s ease;
-            -moz-transition:all 0.5s ease;
-            -o-transition:all 0.5s ease;
-            transition:all 0.5s ease;
-          }
-      }
-
-      .affix-top .nav>li>a {
-         color: #000;
-      }
-
-      .affix-top.navbar .nav>li>a:hover,
-      .affix-top.navbar .navbar-brand
-      {
-         color: #333;
-      }
-
-      .nav ul {
-         list-style: none;
-      }
-
-      .nav ul li {
-         display: inline-block;
-      }
-      </style>
-  </head>
-
-<body>
-  <div>
-    <div id="nav" class="navbar navbar-inverse navbar-fixed-top" data-spy="affix">
-      <div class="container">
-          <div class="navbar-header">
-              <a href="{{site.url}}/" class="navbar-brand">Humans of Harvard</a>
-        <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <i class="fa fa-bars"></i>
-        </a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="{{site.url}}/about">About</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What's New <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="{{site.url}}/stories">Stories</a></li>
-                <li><a href="{{site.url}}/anonymous">Anonymous</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="{{site.url}}/letter">Gratitude Letters</a></li>
-              </ul>
-            </li>
-            <li><a href="{{site.url}}/submit">Submit</a></li>
-          </ul>
-        </div>
-      </div>
+<section class="homepic" style = "height:calc(90% - 30px); height: 90vh">
+  <div class="container">
+    <div class="hometext" style="color: gray; position: absolute; top: 25%; left: 0px; width: 100%; text-align: center">
+        <h2>Within these red brick walls
+          <br/>
+          is a community
+          <br/>
+          <br/>
+          one full of
+          <br/>
+          stories and gratitude
+        </h2>
     </div>
   </div>
-
-  <section class="homepic" style = "height:calc(90% - 50px); height: 90vh">
-    <div class="container">
-      <div class="hometext" style="color: gray; position: absolute; top: 30%; left: 0px; width: 100%; text-align: center">
-          <h2>Within these red brick walls <br> is a community - <br> one full of <br> stories and gratitude. </h2>
-      </div>
-    </div>
-  </section>
-
-	<!-- Wrapper -->
-  <div id="wrapper">
+</section>

@@ -1,21 +1,25 @@
 ---
 layout: default
 ---
-<br><br><br>
-<h1> who are you thankful for? </h1>
-<p> tidbits of gratitude + paying forward the happiness + one step at a time = priceless. </p>
-<article>
-	{% for story in site.posts %}
-    {% if story.type == "letter" %}
-    <hr/>
-      <h2>{{ story.title }}</h2>
-      <br>
-      <i> Dear {{story.to}}, </i>
-      <div>
-        <p>{{ story.content }}</p>
-      </div>
-      <i> Love, {{story.from}} </i>
-    </a>
-    {% endif %}
-	{% endfor %}
-</article>
+
+<div id="main">
+  <div class="inner">
+		<h1> who are you thankful for? </h1>
+		<p> tidbits of gratitude + paying forward the happiness + one step at a time = priceless. </p>
+		<article>
+			{% for story in site.posts %}
+		    {% if story.type == "letter" %}
+		    <hr/>
+		      <h2>{{ story.title }}</h2>
+		      <br>
+		      <i> Dear {{story.to}}, </i>
+		      <div>
+		        <p>{{ story.content }}</p>
+		      </div>
+		      <i> Love, {{story.from}} </i>
+		    </a>
+		    {% endif %}
+			{% endfor %}
+		</article>
+	</div>
+</div>
