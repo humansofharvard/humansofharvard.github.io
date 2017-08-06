@@ -1,0 +1,88 @@
+.navbar{
+	 background-color: #fff;
+	 opacity: 0.9;
+	 border: none;
+	 border-width: 0px;
+}
+
+.homepic {
+	height:100vh;
+	min-height:500px;
+	background-size:cover;
+	background-image:url('/assets/images/homepage.jpg');
+}
+
+.affix {
+	-webkit-transition:padding 0.2s ease-out;
+	-moz-transition:padding 0.2s ease-out;
+	-o-transition:padding 0.2s ease-out;
+	transition:padding 0.2s ease-out;
+
+}
+
+@media (min-width:768px) {
+		.affix-top {
+			background:transparent;
+			border-color:transparent;
+			padding: 15px;
+			-webkit-transition:all 0.5s ease;
+			-moz-transition:all 0.5s ease;
+			-o-transition:all 0.5s ease;
+			transition:all 0.5s ease;
+		}
+}
+
+.affix-top .nav>li>a {
+	 color: #000;
+}
+
+.affix-top.navbar .nav>li>a:hover,
+.affix-top.navbar .navbar-brand
+{
+	 color: #333;
+}
+
+.nav ul {
+	 list-style: none;
+}
+
+.nav ul li {
+	 display: inline-block;
+}
+
+#wrapper > * > .inner {
+		padding: 3.5em 2.5em 1em 2.5em;
+}
+
+#wrapper > #footer > .inner {
+		padding: 1.5em 2em;
+}
+
+#footer {
+	padding: 1.5em 0 0 0;
+}
+
+#main {
+	padding: 0em 0 1em 0;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+	color: #9d9d9d;
+	background-color: transparent;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	background-color: transparent;
+}
+
+h2 {
+	letter-spacing: 0.05em;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #000;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #000;
+}

@@ -4,21 +4,27 @@ layout: default
 
 <div id="main">
   <div class="inner">
+    <h1>{{page.title}}</h1>
     <article class="post">
 
-    <div> <p> <p> &nbsp;&nbsp;&nbsp; </p> </p></div>
-    <span class="image main"><img style="float:right;width: 30%;margin-left: 50px;" src="{{ site.url }}/assets/images/people/{{ page.image }}" hspace="50" alt="" /></span>
-      <div class="entry" style ="text-align:justify">
-        <p>{{ content }}</p>
+    <div class="row">
+      <div class="4u">
+        <span class="image main">
+          <img src="{{ site.url }}/assets/images/people/{{ page.image }}" alt="" />
+        </span>
       </div>
-
-      <div>
-        {{page.title}}
+      <div class="8u">
+        <div>
+          {{ content }}
+        </div>
+        <div>
+          {{page.title}}
+        </div>
+        <div class="date">
+          {{ page.date | date: "%B %e, %Y" }}
+        </div>
       </div>
-      <div class="date">
-        {{ page.date | date: "%B %e, %Y" }}
-      </div>
-      <br> <br> <br> <br> <br>
+    </div>
     </article>
   </div>
 </div>
