@@ -9,96 +9,83 @@ layout: default
 			<form method="post" action="https://formspree.io/thehumansofharvard@gmail.com">
 				<div class="row uniform">
 					<div>
-						<p> What would you like to tell us more about? </p>
+						<p>What would you like to submit?</p>
 					</div>
 
 					<div class="4u 12u$(small)">
 						<input type="radio" id="form-story" name="form-type" required/>
-						<label for="form-story">General Story</label>
+						<label for="form-story">Story</label>
 					</div>
 
 					<div class="4u$ 12u$(small)">
 						<input type="radio" id="form-letter" name="form-type"/>
-						<label for="form-letter"> Gratitude Letter </label>
+						<label for="form-letter">Letter of Gratitude</label>
 					</div>
 
 					<div class="12u$">
 						<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6" required></textarea>
 					</div>
 
-					<div id = "story">
-						<p> If you want to submit a story, let us know if you would like your name to be attached to the story. </p>
+					<div id="story">
+            <h2 style="margin: 0 0 1em 0">ANONYMITY</h2>
 						<div class="6u 12u$(small)">
-							<input type="checkbox" id="demo-copy" name="demo-copy">
-							<label for="demo-copy">Anonymous</label>
+							<input type="checkbox" id="anonymity" name="anonymity">
+							<label for="anonymity">Anonymous</label>
 						</div>
-
-						<br>
-						<p> <b> OPTIONAL </b> </p>
-						<p> Please provide your name and email for contact information. We will only use this to verify your story once we publish it to our website and FB page. If you are writing an anonymous story, do not be pressured to fill the information below if you feel uncomfortable leaving personal contact information. </p>
-
-						<input type="text" name="name" id="your-name" value="" placeholder="Your Name" />
-						<input type="email" name="_replyto" id="your-email" value="" placeholder="Your Email" />
-
-						<br>
-
-						<input type="radio" id="year-2018" name="year-story">
-						<label for="year-2018">2018</label>
-						<input type="radio" id="year-2019" name="year-story">
-						<label for="year-2019">2019</label>
-						<input type="radio" id="year-2020" name="year-story">
-						<label for="year-2020">2020</label>
-						<input type="radio" id="year-2021" name="year-story">
-						<label for="year-2021">2021</label>
-
-						<br>
-
-						<p> Also let us know if you want a picture to go along with your story to be added on our FB page and website or to let the person are grateful for know that he or she is appreciated! </p>
-						<input type="checkbox" id="demo-copy" name="demo-copy-story">
-						<label for="demo-copy">Opt out of Photo</label>
+            <br/>
+						<h2 style="margin: 0 0 1em 0">PHOTO</h2>
+            <p>We will contact you via email for the photo. If you would like to opt out, however, please tick the box below.</p>
+						<input type="checkbox" id="photo-opt-out" name="photo-opt-out">
+						<label for="photo-opt-out">Opt out of photo</label>
 					</div>
 
-					<div id = "gratitude">
-						<p> <b> TELL US MORE </b> </p>
-						<p> If you want to submit a letter, let us know if you want it to be shared (on our FB page and website) or private (only sent to the person you are grateful for). </p>
-
-						<input type="radio" id="form-shared" name="form-publicity" checked required>
+					<div id="gratitude">
+						<h2 style="margin: 0 0 1em 0">SHARING</h2>
+						<p>Would you like your letter to be shared (posted online) or private (only sent to the recipient)?</p>
+						<input type="radio" id="form-shared" name="form-publicity" checked>
 						<label for="form-shared">Shared</label>
 						<input type="radio" id="form-private" name="form-publicity">
 						<label for="form-private">Private</label>
-
-						<input type="text" name="demo-name" id="demo-name" value="" placeholder="Who are you grateful for?" required />
-						<br>
-
-						<input type="radio" id="year-2018-grad" name="year-grad" required>
-						<label for="year-2018-grad">2018</label>
-						<input type="radio" id="year-2019-grad" name="year-grad">
-						<label for="year-2019-grad">2019</label>
-						<input type="radio" id="year-2020-grad" name="year-grad">
-						<label for="year-2020-grad">2020</label>
-						<input type="radio" id="year-2021-grad" name="year-grad">
-						<label for="year-2021-grad">2021</label>
-
-						<br>
-
-						<p> <b> CONTACT </b> </p>
-						<p> Please provide your name and email for contact information. We will only use this to verify the person we will be mailing your gratitude letter to. </p>
-
-						<input type="text" name="name" id="your-name" value="" placeholder="Your Name" />
-						<input type="email" name="_replyto" id="your-email" value="" placeholder="Your Email" />
-
-						<br>
-
-						<p> Also let us know if you want a picture to go along with your story to be added on our FB page and website or to let the person are grateful for know that he or she is appreciated! </p>
-
-						<input type="checkbox" id="demo-copy-grad" name="demo-copy-gratitude">
-						<label for="demo-copy-grad">Opt out of Photo</label>
-
+            <br/>
+            <br/>
+            <h2 style="margin: 0 0 1em 0">RECIPIENT</h2>
+            <p>Who are you grateful for? If the mailing address is unknown, we will try to find it via facebook.college.harvard.edu. If unavailable there, we will unfortunately have to use email instead.</p>
+						<input type="text" name="demo-name" id="demo-name" value="" placeholder="Recipient's Full Name"/>
+            <input type="text" name="demo-name" id="demo-name" value="" placeholder="Recipient's Harvard Email"/>
+            <input type="text" name="demo-name" id="demo-name" value="" placeholder="Recipient's Mailing Address"/>
+            <div id="shared-letter">
+              <br/>
+              <h2 style="margin: 0 0 1em 0">PHOTO</h2>
+              <p>If you would like your letter to be shared, we'd love to post it along with a photo of you. If you would like to opt out, however, please tick the box below.</p>
+              <input type="checkbox" id="photo-opt-out" name="photo-opt-out">
+              <label for="photo-opt-out">Opt out of photo</label>
+            </div>
 					</div>
+
+          <div id="contact-info" class="12u$">
+            <h2 style="margin: 0 0 1em 0">OPTIONAL</h2>
+            <p> Please provide your contact information. We will only use this information
+                to verify the identity of non-anonymous submissions. Feel free to skip
+                this field if you are writing anything anonymous. </p>
+
+            <input type="text" name="name" id="your-name" value="" placeholder="Full Name" />
+            <input type="email" name="_replyto" id="your-email" value="" placeholder="Harvard Email" />
+
+            <br/>
+
+            <input type="radio" id="year-2018" name="year-story">
+            <label for="year-2018">2018</label>
+            <input type="radio" id="year-2019" name="year-story">
+            <label for="year-2019">2019</label>
+            <input type="radio" id="year-2020" name="year-story">
+            <label for="year-2020">2020</label>
+            <input type="radio" id="year-2021" name="year-story">
+            <label for="year-2021">2021</label>
+          </div>
 
 					<div class="12u$">
 						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="special" /></li>
+							<li><input type="submit" value="Send Message" class="special"/></li>
 							<li><input type="reset" value="Reset" /></li>
 						</ul>
 					</div>
